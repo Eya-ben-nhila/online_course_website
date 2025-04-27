@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStack Academy | Learn Web Development</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1 class="title">Online Course Website</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+    <input type="text" placeholder="Your Search..." class="search-bar">
+    <button class="theme-toggle"><i class="dark-moon"></i> dark</button>
+  </nav>
+</header>
+
+<section id="home" class="title2">
+  <div class="title2-content">
+    <h2 class="subtitle">Master Basic Web Development</h2>
+    <p>Learn <strong>Frontend</strong> and <strong>Backend</strong> from scratch!</p>
+    <button id="learning">Start Learning</button>
+  </div>
+</section>
+
+<section id="courses" class="courses">
+  <h2 class="title"><center>Our Courses</center></h2>
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="frontend">Frontend</button>
+    <button class="tab-btn" data-tab="backend">Backend</button>
+  </div>
+
+  <div class="tab-content">
+    <div id="frontend" class="tab-pane active">
+      <div class="lesson" data-lesson="html">
+        <h3 class="title">HTML Introduction</h3>
+        <p class="subtitle">Learn about HTML</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+
+      <div class="lesson" data-lesson="css">
+        <h3 class="title">CSS Styling</h3>
+        <p class="subtitle">CSS Introduction</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+
+      <div class="lesson" data-lesson="js">
+        <h3 class="title">JavaScript Introduction</h3>
+        <p class="subtitle">JS Introduction</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+    </div>
+
+    <div id="backend" class="tab-pane">
+      <div class="lesson" data-lesson="node">
+        <h3 class="title">Node.js</h3>
+        <p class="subtitle">Learn About node.js</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+
+      <div class="lesson" data-lesson="api">
+        <h3 class="title">WEB APIs</h3>
+        <p class="subtitle">Learn about APIs</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+
+      <div class="lesson" data-lesson="db">
+        <h3 class="title">Databases</h3>
+        <p class="subtitle">SQL explained</p>
+        <button class="view-lesson">View Lesson</button>
+        <div class="lesson-content"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="quiz-section">
+    <center>
+    <h2 class="title">Quiz Time!</h2>
+  </center>
+  <div class="quiz-container">
+    <div class="quiz-progress">
+      <span id="current-q">1</span>/<span id="total-qs">4</span>
+    </div>
+    <div id="quiz-question"></div>
+    <div id="quiz-options"></div>
+    <div id="quiz-feedback"></div>
+    <button id="next-question">Next Question</button>
+  </div>
+</section>
+
+<footer>
+  <p>Made by Fama 7aja Team</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
